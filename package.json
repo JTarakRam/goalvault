@@ -1,0 +1,16 @@
+{
+  "name": "goalvault",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Goal-based savings app with UPI Autopay / e-mandate contributions and ring-fenced customer funds.",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,green \"npm:dev -w server\" \"npm:dev -w web\"",
+    "build": "npm run build -w server && npm run build -w web",
+    "test": "npm test -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web"
+  },
+  "devDependencies": {
+    "concurrently": "9.1.0"
+  }
+}

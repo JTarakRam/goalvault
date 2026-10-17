@@ -1,0 +1,9 @@
+{
+  "name": "GoalVault",
+  "short_name": "GoalVault",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7ee",
+  "theme_color": "#1fa385",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
